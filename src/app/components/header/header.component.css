@@ -1,0 +1,170 @@
+/* ----------------------Slider Styles ---------------------*/
+* {
+    overflow: hidden;
+    
+  
+  }
+  #bg-img {
+    background-image: url("../../../assets/images/home/home-bg.png");
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Adjust the height as necessary */
+}
+
+
+  .ms-6 {
+    margin-left: 5.5rem !important;
+  }
+ 
+    .ms-xl-6 {
+      margin-left: 0 !important; /* Remove the left margin on mobile */
+    }
+
+ 
+.app img{
+  /* width: 100%; */
+  margin-left: 120px;
+}
+.dynamic-text {
+ font-size:40px;
+ font-weight: bold;
+ margin: 12%;
+}
+.button1 {
+  background: #2fad9f;
+  border: 1px solid #2fad9f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.button1:hover,
+.button1:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #2fad9f;
+}
+
+.button1:active {
+  opacity: .5;
+}
+
+
+.button2 {
+  background: #1261b0;
+  border: 1px solid white;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.button2:hover,
+.button2:active {
+  background-color: white;
+  background-position: 0 0;
+  color: #2fad9f;
+}
+
+.button2:active {
+  opacity: .5;
+}
+
+
+.mt-6{
+  margin-top: 6rem;
+}
+
+
+
+
+
+
+.rotating-text {
+  position: relative;
+  overflow: hidden; /* Hide overflowing text */
+  height: 2em; /* Adjust according to the text height */
+}
+
+.rotating-text p {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: rotate 6s infinite; 
+}
+
+@keyframes rotate {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  10% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  25% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  35% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+}
+
+/* Delay for each text */
+.rotating-text p:nth-child(1) {
+  animation-delay: 0s;
+}
+.rotating-text p:nth-child(2) {
+  animation-delay: 1.5s; 
+}
+.rotating-text p:nth-child(3) {
+  animation-delay: 3s; /* Reduced timing */
+}
+.rotating-text p:nth-child(4) {
+  animation-delay: 4.5s; /* Reduced timing */
+}
+
+
+
+  

@@ -1,0 +1,77 @@
+.image-column img {
+    border-radius: 0 15px 15px 0; 
+    width: 100%; 
+    height: auto; 
+}
+
+#Contact-us {
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    background-color: #fff; 
+    position: relative; 
+    
+}
+.bg-img {
+    background-color: #777af212 ; 
+    height: 500px; 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.button1 {
+    background: #2fad9f;
+    border: 1px solid #2fad9f;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.button1:hover,
+.button1:active {
+    background-color: white;
+    background-position: 0 0;
+    color: #2fad9f;
+}
+
+.button1:active {
+    opacity: .5;
+}
+/* Input fields with a background color */
+.input-bg {
+    background-color: #f2f2f2; /* Change this to your desired background color */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Add a border for better visibility */
+    padding: 10px;
+}
+
+/* Ensure checkbox and label have proper alignment */
+.form-check-input {
+    margin-right: 5px;
+}
+
+/* Adjust the label text for inputs */
+.form-label {
+    margin-bottom: 5px;
+}

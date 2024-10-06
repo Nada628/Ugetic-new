@@ -1,0 +1,78 @@
+import { Component, AfterViewInit } from '@angular/core';
+declare var $: any; // Declare jQuery
+
+@Component({
+  selector: 'app-trusted-by',
+  templateUrl: './trusted-by.component.html',
+  styleUrls: ['./trusted-by.component.css']
+})
+export class TrustedByComponent implements AfterViewInit{
+
+
+  constructor() { }
+
+  ngAfterViewInit(): void {
+    this.initializeSlick();
+  }
+
+  initializeSlick(): void {
+    const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+
+    $('.customer-logos').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      rtl: isRtl, // Enable RTL mode if the document is in RTL
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 1200, // Large devices (desktops)
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 992, // Medium devices (tablets)
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 768, // Small devices (phones)
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 576, // Extra small devices (phones)
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  }
+}
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\
+transltion service
+import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class TranslationService {
+
+  constructor(private translate:TranslateService){}
+  switchLang(lang:string) {
+    this.translate.use(lang);
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+  }

@@ -1,0 +1,102 @@
+<app-navbar></app-navbar>
+<div class="container-fluid position-relative">
+    <!-- Background -->
+    <div class="bg-img position-relative">
+        <img src="../../../assets/images/home/contact-us/software-bg.jpg" class="w-100" alt="About Us">
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white d-flex flex-column align-items-center">
+            <p class="fs-1 fw-bold mb-4">Let's get in touch.</p>
+            <p class="fs-1 fw-bold mt-0">Contact us.</p>
+            <p class="fw-semibold fs-6 mt-3 mb-0 text-center text-light"> 
+                We design, build, and support websites and apps for clients worldwide.
+            </p>
+            <p class="fw-semibold fs-6 text-center text-light"> 
+                We make your business stand out. Interested? Let's chat.
+            </p>
+        </div>
+    </div> 
+
+    <div class="container w-75" id="Contact-us" style="margin-top: -180px;"> 
+        <div class="row">
+            <!-- Left Column: Form -->
+            <div class="col-md-6 d-flex flex-column align-items-center">
+                <p class="mb-4 text-blue fs-5 text-center mt-5 fw-bold">
+                    Have some questions or want to say hi?
+                </p>
+                <p class="mb-4 text-blue fs-5 text-center w-75">
+                    Anything you ask, no matter how small, will make a big difference in helping us.
+                </p>
+                <form class="w-75 mt-4"> 
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div class="text-center"> 
+                        <button type="submit" class="btn button1">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="col-md-6 image-column d-flex justify-content-center align-items-center">
+                <img src="../../../assets/images/home/contact-us/contact-creative.jpg" alt="Contact Image" class="img-fluid"> <!-- Add img-fluid class -->
+            </div>
+        </div>
+    </div> 
+    <app-give-us-call></app-give-us-call>
+
+    <!-- map -->
+    <div class=" position-relative map-section">
+        <div class="row">
+            <div class="col-12">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094237!2d144.95373631531576!3d-37.81627997975139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e4c3334d6b0b!2sMelbourne!5e0!3m2!1sen!2sau!4v1631556637723!5m2!1sen!2sau"
+                  width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <!-- Changed height to 600 -->
+              </div>
+        </div>
+        
+   <!-- Overlapping Card -->
+<div class="card map-card position-absolute p-4">
+  <div class="card-body">
+    <div class="row mb-3">
+      <div class="col-2">
+        <i class="fa-solid fa-location-dot " style="color: #2fad9f;"></i>
+          </div>
+      <div class="col-10">
+        <h6 class="card-title text-blue mb-2 ">New York. 112 W 34th St, Manhattan</h6>
+        <p class="card-text text-secondary fw-semibold mb-4">Know our locations and affiliates in New York. Contact us today.</p>
+      </div>
+    </div>
+    
+    <div class="row mb-3">
+      <div class="col-2">
+        <i class="fa-solid fa-phone " style="color: #2fad9f;"></i>
+              </div>
+      <div class="col-10">
+        <h6 class="card-title text-blue mb-2 ">(1) 212-946-2700 / 212-946-2707</h6>
+        <p class="card-text text-secondary fw-semibold mb-4">Visit our appointment request page to find a time that is convenient for you</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-2">
+        <i class=" fa-regular fa-clock " style="color: #2fad9f;"></i>      </div>
+      <div class="col-10">
+        <h6 class="card-title text-blue mb-2 ">Our Opening Hours</h6>
+        <p class="card-text text-secondary fw-semibold mb-1">Monday-Friday <span>8.00am - 6.00pm</span>
+        </p>
+        <p class="card-text text-secondary fw-semibold ">Saturday <span>8.00am - 6.00pm</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+    <app-footer></app-footer>
+</div>

@@ -1,0 +1,22 @@
+ <div class="slide">
+          <div class="card h-100 border">
+            <div class="d-flex align-items-center p-3">
+              <img src="../../../assets/images/home/review/review3.jpg" class="img-fluid me-3" alt="Image">
+              <div>
+                <p class="mt-2 fs-6 fw-semibold text-blue">
+                  You are so easy to work with and understand our aesthetic and direction so well.
+                </p>
+                <p class="card-text fw-semibold text-blue">Awesome Work! 💪</p>
+                <hr>
+                <div class="d-flex align-items-center mt-3">
+                  <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                  <span class="ms-2 text-secondary">Angel Investor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        ==========================
+            <!-- Card 2 -->
+       
+  

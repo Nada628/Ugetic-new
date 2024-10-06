@@ -1,0 +1,84 @@
+.bg-img {
+    background-color: #777af212 ; 
+    height: 500px; 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffcc00 !important; /* Change to your desired color */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #d3a00f !important; /* Change to your desired hover color */
+}
+.hover-card {
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+.hover-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.card-title-btn {
+    background-color: #777af212; 
+    color: #2fad9f; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 2px 10px; /* Reduced padding for a smaller button */
+    margin: 2px; /* Smaller margin around the button */
+    display: inline-flex; /* Use inline-flex for sizing */
+    align-items: center; /* Center the items vertically */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.card-title-btn i {
+    margin-right: 4px; /* Reduced space between the icon and the text */
+    font-size: 10px; /* Slightly smaller icon size */
+}
+
+.card-title-btn:hover {
+    background-color: #2fad9f; 
+    color: white;
+}
+.button1 {
+    background: #2fad9f;
+    border: 1px solid #2fad9f;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .button1:hover,
+  .button1:active {
+    background-color: white;
+    background-position: 0 0;
+    color: #2fad9f;
+  }
+  
+  .button1:active {
+    opacity: .5;
+  }

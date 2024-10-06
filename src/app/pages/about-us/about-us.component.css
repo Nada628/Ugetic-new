@@ -1,0 +1,89 @@
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker shadow for hover */
+    transform: scale(1.05); /* Optional: slightly scale up the card */
+}
+.card-img-top {
+    border-radius: 10px; /* Adjust radius as needed */
+    transition: transform 0.3s; /* For smooth hover effect */
+}
+
+.cardy:hover .cardy-img-top {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.img-overlap {
+    margin-top: -30px; 
+    margin-right: -20px;
+}
+.round-container{
+    background-color: #777af212;
+    border-radius: 50px;
+    width: 95%;
+    height: 90vh;
+}
+.img-overlap-second{
+    margin-top: -30px; 
+    margin-right: 20px;
+}
+.button2 {
+    background: #2fad9f;
+    border: 1px solid #2fad9f;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .button2:hover,
+  .button2:active {
+    background-color: white;
+    background-position: 0 0;
+    color: #2fad9f;
+  }
+  
+  .button2:active {
+    opacity: .5;
+  }
+.circle-img {
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(181, 178, 178, 0.105); 
+    border-radius: 50%; 
+}
+.custome-card{
+    width: 280px !important;
+}
+.mt-7{
+    margin-top: 9rem;
+}
+.ms-7{
+    margin-left: 5rem;
+}

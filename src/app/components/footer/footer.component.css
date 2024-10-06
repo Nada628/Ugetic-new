@@ -1,0 +1,21 @@
+/* footer style */
+#footer{
+  background-color:#143055;
+  ;
+}
+
+.footer-element{
+text-decoration: none;
+color: white;
+  font-family: "arial";
+
+
+}
+.footer-header{
+color: white;
+  font-family: "arial";
+
+}
+.footer-logo img{
+width: 30%;
+}

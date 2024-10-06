@@ -1,0 +1,117 @@
+<!-- what our client say -->
+ <div class="container">
+  <!-- first row -->
+  <div class="row mt-5">
+    <div class="col-8 ">
+      <p class="text-blue ms-5 fw-bold fs-2 w-75">
+        What our clients say is extremely
+        important to us
+      </p>
+    </div>
+    <div class="col-4 mt-2">
+      <button class="button2 w-50 ms-8">Start Free Trial</button>
+  </div>
+  </div>
+  <!-- second row -->
+  <div class=" my-5 slider container-fluid">
+      <div class="slider-track d-flex align-items-center">
+        <!-- Card 1 -->
+        <div class="slide">
+          <div class="card h-100 border">
+            <div class="d-flex align-items-center p-3">
+              <img src="../../../assets/images/home/review/review1.jpg" class="img-fluid me-3" alt="Image">
+              <div>
+                <p class="mt-2 fs-6 fw-semibold text-blue">You are so easy to work with and understand our aesthetic and direction so well.</p>
+                <p class="card-text fw-semibold text-blue">Awesome work! 💪</p>
+                <hr>
+                <div class="d-flex align-items-center mt-3">
+                  <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                  <span class="ms-2 text-secondary">Angel Investor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <!-- card2 -->
+          <div class="slide">
+            <div class="card h-100 border">
+              <div class="d-flex align-items-center p-3">
+                <img src="../../../assets/images/home/review/review1.jpg" class="img-fluid me-3" alt="Image">
+                <div>
+                  <p class="mt-2 fs-6 fw-semibold text-blue">You are so easy to work with and understand our aesthetic and direction so well.</p>
+                  <p class="card-text fw-semibold text-blue">Awesome work! 💪</p>
+                  <hr>
+                  <div class="d-flex align-items-center mt-3">
+                    <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                    <span class="ms-2 text-secondary">Angel Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="slide">
+            <div class="card h-100 border">
+              <div class="d-flex align-items-center p-3">
+                <img src="../../../assets/images/home/review/review1.jpg" class="img-fluid me-3" alt="Image">
+                <div>
+                  <p class="mt-2 fs-6 fw-semibold text-blue">You are so easy to work with and understand our aesthetic and direction so well.</p>
+                  <p class="card-text fw-semibold text-blue">Awesome work! 💪</p>
+                  <hr>
+                  <div class="d-flex align-items-center mt-3">
+                    <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                    <span class="ms-2 text-secondary">Angel Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card4 -->
+          <!-- <div class="slide">
+            <div class="card h-100 border">
+              <div class="d-flex align-items-center p-3">
+                <img src="../../../assets/images/home/review/review1.jpg" class="img-fluid me-3" alt="Image">
+                <div>
+                  <p class="mt-2 fs-6 fw-semibold text-blue">You are so easy to work with and understand our aesthetic and direction so well.</p>
+                  <p class="card-text fw-semibold text-blue">Awesome work! 💪</p>
+                  <hr>
+                  <div class="d-flex align-items-center mt-3">
+                    <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                    <span class="ms-2 text-secondary">Angel Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- card5 -->
+          <!-- <div class="slide">
+            <div class="card h-100 border">
+              <div class="d-flex align-items-center p-3">
+                <img src="../../../assets/images/home/review/review1.jpg" class="img-fluid me-3" alt="Image">
+                <div>
+                  <p class="mt-2 fs-6 fw-semibold text-blue">You are so easy to work with and understand our aesthetic and direction so well.</p>
+                  <p class="card-text fw-semibold text-blue">Awesome work! 💪</p>
+                  <hr>
+                  <div class="d-flex align-items-center mt-3">
+                    <p class="fw-bold mb-0" style="color: #2fad9f;">Thomas Smith</p>
+                    <span class="ms-2 text-secondary">Angel Investor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </div>
+  
+      <!-- Arrow controls -->
+      <button class="arrow prev" (click)="prevSlide()">&#10094;</button>
+      <button class="arrow next" (click)="nextSlide()">&#10095;</button>
+  
+      <!-- Pagination dots -->
+      <div class="pagination-dots">
+        <span class="dot" *ngFor="let dot of dots; let i = index" [class.active]="i === currentSlide"></span>
+      </div>
+    </div>
+  </div>
+  
+  

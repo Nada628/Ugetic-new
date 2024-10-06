@@ -1,0 +1,85 @@
+
+
+.navbar-scrolled {
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on scroll */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+
+  
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.navbar-scrolled .nav-link {
+  color: #212529  !important; 
+}
+
+.navbar-nav{
+    margin-left: 18%;
+}
+.navbar-brand img{
+    width: 190px;
+    height: 60px;
+  }
+  .navbar-nav .nav-link {
+      transition: color 0.3s ease-in-out;
+
+  }
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active
+{
+    color: #d3a00f;
+    }
+
+    .navbar-nav .dropdown-item {
+    color: #ffffff; 
+    }
+
+    .navbar-nav .dropdown-item:hover {
+        color: #d3a00f; 
+    }
+    .dropdown-toggle img{
+        width: 30px;
+        height: 20px;
+   
+        
+    }
+
+    .signup {
+        background: #2fad9f;
+        border: 1px solid #2fad9f;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 16px;
+        min-height: 40px;
+        outline: 0;
+        padding: 12px 14px;
+        text-align: center;
+        text-rendering: geometricprecision;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+      }
+      
+      .signup:hover,
+      .signup:active {
+        background-color: white;
+        background-position: 0 0;
+        color: #2fad9f;
+      }
+      
+      .signup:active {
+        opacity: .5;
+      }

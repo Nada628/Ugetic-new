@@ -1,0 +1,123 @@
+.custome-card {
+    width: 170px; /* Fixed width for square shape */
+    height: 170px; /* Fixed height for square shape */
+    border-radius: 5px;
+    border-color: #f5f6fe;
+    background-color: #f5f6fe ;
+
+}
+
+.card-caption {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #132f55;
+}
+#tabs{
+    background-color: #f5f6fe ;
+    border-radius: 2%;
+    border-color: #f5f6fe;
+
+}
+.text-blue{
+    color: #132f55;
+  }
+  .nav-pills .nav-link.active {
+    background-color: transparent; 
+    color: inherit; 
+    border: none; 
+    box-shadow: 2px 2px 4px rgba(148, 148, 187, 2); 
+  }
+  .step-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #7a5ff9; /* Purple shade */
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    overflow: hidden; /* Ensure spinner does not overflow */
+  }
+  /* Line between steps */
+  .step-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 35px; /* Adjust this to align with circle */
+    left: 70%;
+    width: 200px;
+    height: 1px;
+    background-color: #ddd;
+  }
+
+  /* Hide the line after the last step */
+  .step-wrapper:last-child::after {
+    display: none;
+  }
+  .mt-6{
+    margin-top: 8rem;
+  }
+  .mt-circle{
+    margin-top: 6rem;
+
+  }
+
+
+  .step-number {
+    position: relative; /* Allow spinner to be absolutely positioned within the circle */
+    z-index: 1; /* Keep the number above the spinner */
+  }
+
+  /* Show spinner on hover */
+  .step-circle:hover .spinner-border {
+    display: inline-block; /* Show spinner on hover */
+    animation: spin 0.5s linear infinite; /* Animation for continuous spinning */
+  }
+
+  /* Hide the spinner by default */
+  .spinner-border {
+    display: none; /* Initially hide the spinner */
+    position: absolute; /* Position the spinner absolutely */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .button1 {
+    background: #2fad9f;
+    border: 1px solid #2fad9f;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  .button1:hover,
+  .button1:active {
+    background-color: white;
+    background-position: 0 0;
+    color: #2fad9f;
+  }
+  
+  .button1:active {
+    opacity: .5;
+  }

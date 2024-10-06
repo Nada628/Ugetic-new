@@ -1,0 +1,11 @@
+.text-blue{
+  color: #132f55;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent; 
+  color: inherit; 
+  border: none; 
+  box-shadow: 2px 2px 4px rgba(148, 148, 187, 2); 
+}
+
+

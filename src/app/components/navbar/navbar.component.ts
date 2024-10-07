@@ -1,5 +1,4 @@
-
-import { Component, HostListener,OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { LocalStorageService } from 'src/app/Services/local-storage.service';
 import { TranslationService } from 'src/app/Services/translate.service';
 
@@ -10,8 +9,8 @@ import { TranslationService } from 'src/app/Services/translate.service';
 })
 export class NavbarComponent implements OnInit {
   navbarScrolled = false;
-
   currentLanguageImage!: string;
+  logo = '../../../assets/images/home/ugitech--logo-02.png';  // Default logo
 
   constructor(
     private translationService: TranslationService,
@@ -27,7 +26,6 @@ export class NavbarComponent implements OnInit {
     this.translationService.switchLang(lang);
     this.localStorageService.setItem('lang', lang);
     this.setLanguageImage(lang);
-
   }
 
   private setLanguageImage(lang: string) {
@@ -41,13 +39,12 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollPosition = window.pageYOffset;
-    if (scrollPosition > 50) {  // Adjust the scroll position value as needed
+    if (scrollPosition > 50) {
       this.navbarScrolled = true;
+      this.logo = '../../../assets/images/home/logoblack.png'; // Scrolled logo
     } else {
       this.navbarScrolled = false;
+      this.logo = '../../../assets/images/home/ugitech--logo-02.png'; // Default logo
     }
   }
-
 }
-
-

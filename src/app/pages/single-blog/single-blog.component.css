@@ -1,0 +1,41 @@
+.bg-img {
+    background-color: #777af212 ; 
+    height: 500px; 
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.blog-content {
+    padding: 20px;
+  }
+  
+  .fixed-right {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+  }
+  
+  @media (max-width: 768px) {
+    .fixed-right {
+      position: static;
+    }
+  }
+  .mt-7{
+    margin-top: 7rem;
+}
+.ms-7{
+    margin-left: 5rem;
+}
+.blog-img img{
+    border-radius: 5px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ a{
+    text-decoration: none;
+  }

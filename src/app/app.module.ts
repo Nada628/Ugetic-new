@@ -27,6 +27,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -55,6 +56,7 @@ export function createTranslateLoader(http: HttpClient) {
     BlogComponent,
     PricingComponent,
     PriceCardComponent,
+    SingleBlogComponent,
 
   ],
 

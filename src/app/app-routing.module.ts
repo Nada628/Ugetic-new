@@ -7,6 +7,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
+import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,12 +17,16 @@ const routes: Routes = [
   {path : 'contact-us', component:ContactUsComponent},
   {path : 'pricing', component:PricingComponent},
   {path : 'blog', component:BlogComponent},
+  {path: 'single-blog',component:SingleBlogComponent},
   {path : 'login', component:LoginComponent},
   { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { 
+    anchorScrolling: 'enabled',  // Enable anchor scrolling
+    scrollPositionRestoration: 'enabled'  
+  })],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

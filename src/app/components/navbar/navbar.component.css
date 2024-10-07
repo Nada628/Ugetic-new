@@ -1,17 +1,12 @@
-
-
+/* 
 .navbar-scrolled {
   background-color: white; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on scroll */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-
-  
 }
 
 .navbar {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
 }
 .navbar-scrolled .nav-link {
   color: #212529  !important; 
@@ -23,55 +18,40 @@
 .navbar-brand img{
     width: 190px;
     height: 60px;
+    margin-left: 50px;
   }
   .navbar-nav .nav-link {
       transition: color 0.3s ease-in-out;
 
   }
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link.active
-{
-    color: #d3a00f;
-    }
 
     .navbar-nav .dropdown-item {
     color: #ffffff; 
     }
 
+    .navbar-nav .nav-link:focus,
+    .navbar-nav .nav-link.active {
+        color: #d3a00f;  
+        border-bottom: 2px solid #d3a00f;
+        padding-bottom: 5px;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        color: #d3a00f; 
+        border-bottom: 2px solid #d3a00f; 
+        padding-bottom: 5px;
+    }
+    
     .navbar-nav .dropdown-item:hover {
         color: #d3a00f; 
     }
     .dropdown-toggle img{
         width: 30px;
         height: 20px;
-   
-        
+    
     }
 
-    .signup {
-        background: #2fad9f;
-        border: 1px solid #2fad9f;
-        border-radius: 6px;
-        box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-        box-sizing: border-box;
-        color: #FFFFFF;
-        cursor: pointer;
-        display: inline-block;
-        font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 16px;
-        min-height: 40px;
-        outline: 0;
-        padding: 12px 14px;
-        text-align: center;
-        text-rendering: geometricprecision;
-        text-transform: none;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: middle;
-      }
+
       
       .signup:hover,
       .signup:active {
@@ -82,4 +62,118 @@
       
       .signup:active {
         opacity: .5;
-      }
+      } */
+
+
+
+
+/* Style for the navbar after scrolling */
+.navbar-scrolled {
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on scroll */
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Change link color after scroll */
+.navbar-scrolled .nav-link {
+  color: #212529  !important; 
+}
+
+/* Adjust navbar-brand logo size */
+.navbar-brand img{
+  width: 190px;
+  height: 60px;
+  margin-left: 50px;
+}
+
+/* Dropdown flag size */
+.dropdown-flag {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Adjust the margins of nav items */
+.nav-item {
+  margin-right: 15px;
+}
+
+/* Hover and active states for nav links */
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #d3a00f !important;  
+  border-bottom: 2px solid #d3a00f;
+  padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d3a00f !important; 
+  border-bottom: 2px solid #d3a00f; 
+  padding-bottom: 5px;
+}
+
+/* Signup button styles */
+.signup {
+  background: #2fad9f;
+  border: 1px solid #2fad9f;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  width: 126px;
+  min-height: 45px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.signup:hover,
+.signup:active {
+  background-color: white;
+  color: #2fad9f;
+}
+
+.signup:active {
+  opacity: 0.5;
+}
+/* Adjust the size of the language icons */
+.language-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.dropdown-flag {
+  width: 24px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+/* .dropdown-item {
+  padding: 5px;
+} */
+/* Hide language text by default */
+.language-text {
+  display: none;
+  margin-left: 8px; /* Space between the icon and text */
+}
+
+/* Show the language text when the dropdown is open */
+.nav-item.dropdown.show .language-text {
+  display: inline-block;
+}

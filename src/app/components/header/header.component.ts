@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  currentIconClass: string = 'fa-solid fa-arrow-right'; // Default icon class
+  currentIconClass: string = 'fa-solid fa-arrow-right';
   private langChangeSubscription: Subscription | undefined;
 
   constructor(
@@ -16,11 +16,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    // Initialize based on the current language
     const lang = this.translationService.getCurrentLang();
     this.setIconClass(lang);
 
-    // Subscribe to language changes
     this.langChangeSubscription = this.translationService.languageChanged.subscribe((newLang: string) => {
       this.setIconClass(newLang);
     });
@@ -28,14 +26,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private setIconClass(lang: string) {
     const iconClasses: { [key: string]: string } = {
-      'en': 'fa-solid fa-arrow-right', // Default icon for English
-      'ar': 'fa-solid fa-arrow-left'   // Example icon for Arabic
+      'en': 'fa-solid fa-arrow-right', 
+      'ar': 'fa-solid fa-arrow-left'   
     };
     this.currentIconClass = iconClasses[lang];
   }
 
   ngOnDestroy(): void {
-    // Unsubscribe to prevent memory leaks
     if (this.langChangeSubscription) {
       this.langChangeSubscription.unsubscribe();
     }

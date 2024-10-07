@@ -44,7 +44,7 @@
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
-  min-height: 40px;
+  min-height: 55px;
   outline: 0;
   padding: 12px 14px;
   text-align: center;
@@ -54,7 +54,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: 100%;
+  width: 90%;
 }
 
 .button1:hover,
@@ -82,7 +82,7 @@
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
-  min-height: 40px;
+  min-height: 55px;
   outline: 0;
   padding: 12px 14px;
   text-align: center;
@@ -92,7 +92,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  width: 100%;
+  width: 97%;
 }
 
 .button2:hover,
@@ -114,9 +114,7 @@
 .rotating-text {
   position: relative;
   overflow: hidden;
-  /* Hide overflowing text */
   height: 2em;
-  /* Adjust according to the text height */
 }
 
 .rotating-text p {
@@ -173,4 +171,10 @@
 }
 .mt-7{
   margin-top: 6.5rem;
+}
+.static-text p{
+font-size: 18px;
+}
+.ms-5-5{
+margin-left: 2rem;
 }

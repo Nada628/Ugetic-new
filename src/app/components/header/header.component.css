@@ -10,7 +10,7 @@
 }
 
 
-.ms-6 {
+.ms-lg-6 {
   margin-left: 5.5rem !important;
 }
 
@@ -18,12 +18,6 @@
   margin-left: 0 !important;
   /* Remove the left margin on mobile */
 }
-
-
-/* .app img {
-  margin-left: 120px;
-  width: 100%;
-} */
 
 .app img {
   margin-left: 120px;
@@ -35,56 +29,82 @@
   font-weight: bold;
   margin: 12%;
 }
-@media (max-width: 992px) { 
+
+@media (max-width: 992px) {
   .dynamic-text {
     font-size: 28px;
-    margin: 8%; 
+    margin: 8%;
   }
-  .static-text p{
-    font-size: 17px !important;
-    margin-left: 1.8rem;
-    }
-    .buttons{
-      margin-left: 1.8rem;
 
-    }
-    .app img {
-      margin-top: 0 !important;
-      width: 100%;
-  
-      }
-      .mt-7{
-        margin-top: 0 !important;
-      }
+  .static-text p {
+    font-size: 17px !important;
+    margin-left: 1.8rem !important;
+  }
+
+  .buttons {
+    margin-left: 2.8rem;
+
+  }
+
+  .app img {
+    margin-top: 0 !important;
+    width: 100%;
+
+  }
+
+  .mt-7 {
+    margin-top: 0 !important;
+  }
+
+  .ms-lg-5-5 {
+    margin-left: 0 !important;
+  }
+  .ms-lg-6{
+    margin-left: 0 !important;
+  }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .dynamic-text {
     font-size: 28px;
-    margin: 12%; 
+    margin: 12%;
   }
-  .static-text p{
+
+  .static-text p {
     font-size: 17px !important;
     margin-left: 1.8rem;
-    }
-    .buttons{
-      margin-left: 1.8rem;
-    }
-    .button1{
-      width: 75% !important;
-    }
-    .button2{
-      width: 70% !important;
-    }
-    .app img {
-      width: 100%;
-  
-      }
-      .mt-7{
-        margin-top: 0 !important;
-      }
-  
+  }
+
+  .buttons {
+    margin-left: 1.8rem;
+  }
+
+  .button1 {
+    width: 75% !important;
+  }
+
+  .button2 {
+    width: 70% !important;
+  }
+
+  .app img {
+    width: 100%;
+
+  }
+
+  .mt-7 {
+    margin-top: 0 !important;
+  }
+
+  .ms-lg-5-5 {
+    margin-left: 0 !important;
+  }
+  .ms-lg-6{
+    margin-left: 0 !important;
+  }
+
 }
+
 .button1 {
   background: #d3a00f;
   border: 1px solid #d3a00f;
@@ -223,12 +243,15 @@
   animation-delay: 4.5s;
   /* Reduced timing */
 }
-.mt-7{
+
+.mt-7 {
   margin-top: 6.5rem;
 }
-.static-text p{
-font-size: 18px;
+
+.static-text p {
+  font-size: 18px;
 }
-.ms-5-5{
-margin-left: 2rem;
+
+.ms-lg-5-5 {
+  margin-left: 2rem;
 }

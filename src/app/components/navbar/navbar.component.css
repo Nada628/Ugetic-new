@@ -1,77 +1,17 @@
-/* 
-.navbar-scrolled {
-  background-color: white; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.navbar {
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.navbar-scrolled .nav-link {
-  color: #212529  !important; 
-}
-
-.navbar-nav{
-    margin-left: 18%;
-}
-.navbar-brand img{
-    width: 190px;
-    height: 60px;
-    margin-left: 50px;
-  }
-  .navbar-nav .nav-link {
-      transition: color 0.3s ease-in-out;
-
-  }
-
-    .navbar-nav .dropdown-item {
-    color: #ffffff; 
-    }
-
-    .navbar-nav .nav-link:focus,
-    .navbar-nav .nav-link.active {
-        color: #d3a00f;  
-        border-bottom: 2px solid #d3a00f;
-        padding-bottom: 5px;
-    }
-    
-    .navbar-nav .nav-link:hover {
-        color: #d3a00f; 
-        border-bottom: 2px solid #d3a00f; 
-        padding-bottom: 5px;
-    }
-    
-    .navbar-nav .dropdown-item:hover {
-        color: #d3a00f; 
-    }
-    .dropdown-toggle img{
-        width: 30px;
-        height: 20px;
-    
-    }
-
-
-      
-      .signup:hover,
-      .signup:active {
-        background-color: white;
-        background-position: 0 0;
-        color: #2fad9f;
-      }
-      
-      .signup:active {
-        opacity: .5;
-      } */
-
-
-
 
 /* Style for the navbar after scrolling */
 .navbar-scrolled {
   background-color: white; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on scroll */
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar-collapse.show {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.navbar-collapse.show .nav-link {
+  color: #212529 !important;
 }
 
 .navbar {
@@ -184,7 +124,14 @@
     width: 140px;
     height: 50px;
     margin-left: 15px;
+
   }
+  .nav-item {
+    margin-right: 0;
+    margin-left: 0 !important;
+    padding: 0.5rem 1rem;
+  }
+ 
 }
 
 @media (max-width: 992px) { 
@@ -192,5 +139,10 @@
     width: 140px;
     height: 50px;
     margin-left: 15px;
+  }
+  .nav-item {
+    margin-left: 0 !important;
+    margin-right: 0;
+    padding: 0.5rem 1rem;
   }
 }

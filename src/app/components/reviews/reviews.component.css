@@ -120,3 +120,16 @@
 .dot.active {
   background-color: #717171;
 }
+
+/* Mobile view: Show only 1 slide */
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 100%; /* Set the slide to take 100% width on mobile */
+  }
+
+  /* Adjust arrow size for mobile */
+  .arrow {
+    font-size: 16px;
+    padding: 5px;
+  }
+}

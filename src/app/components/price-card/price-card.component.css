@@ -7,15 +7,25 @@
     border: #FFFFFF;
     /* height: 650px; */
 }
+@media(max-width:576px){
+  .card{
+    width: 320px
+  }
+  #pricing{
+    border-radius:1%;
+    width: 100%;
+
+  }
+}
 
 
 .button2 {
     background: white;
-    border: 1px solid #2fad9f;
+    border: 1px solid #d3a00f;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #2fad9f;
+    color: #d3a00f;
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -38,7 +48,7 @@
   
   .button2:hover,
   .button2:active {
-    background-color: #2fad9f;
+    background-color: #d3a00f;
     background-position: 0 0;
     color: white;
   }
@@ -47,8 +57,8 @@
     opacity: .5;
   }
   .button1 {
-    background: #2fad9f;
-    border: 1px solid #2fad9f;
+    background: #d3a00f;
+    border: 1px solid #d3a00f;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
@@ -77,7 +87,7 @@
   .button1:active {
     background-color: white;
     background-position: 0 0;
-    color: #2fad9f;
+    color: #d3a00f;
   }
   
   .button1:active {

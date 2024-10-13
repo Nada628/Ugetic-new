@@ -89,6 +89,9 @@
   height: 60px;
   margin-left: 50px;
 }
+/* width: 140px;
+    height: 50px;
+    margin-left: 15px; */
 
 /* Dropdown flag size */
 .dropdown-flag {
@@ -118,12 +121,12 @@
 
 /* Signup button styles */
 .signup {
-  background: #2fad9f;
-  border: 1px solid #2fad9f;
+  background-color: transparent;
+  border: 1px solid #d3a00f;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #d3a00f;
   cursor: pointer;
   display: inline-block;
   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -146,7 +149,7 @@
 .signup:hover,
 .signup:active {
   background-color: white;
-  color: #2fad9f;
+  color: #d3a00f;
 }
 
 .signup:active {
@@ -170,10 +173,24 @@
 /* Hide language text by default */
 .language-text {
   display: none;
-  margin-left: 8px; /* Space between the icon and text */
+  margin-left: 8px; 
 }
 
-/* Show the language text when the dropdown is open */
 .nav-item.dropdown.show .language-text {
   display: inline-block;
+}
+@media (max-width: 576px) { 
+  .navbar-brand img{
+    width: 140px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 992px) { 
+  .navbar-brand img{
+    width: 140px;
+    height: 50px;
+    margin-left: 15px;
+  }
 }

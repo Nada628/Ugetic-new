@@ -9,3 +9,9 @@
 }
 
 
+@media(max-width:992px){
+  .tab-pane img{
+    width: 100% !important;
+    /* margin-left:2rem   !important;  */
+  }
+}

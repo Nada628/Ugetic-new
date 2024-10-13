@@ -20,6 +20,11 @@
 }
 
 
+/* .app img {
+  margin-left: 120px;
+  width: 100%;
+} */
+
 .app img {
   margin-left: 120px;
   width: 100%;
@@ -30,10 +35,59 @@
   font-weight: bold;
   margin: 12%;
 }
+@media (max-width: 992px) { 
+  .dynamic-text {
+    font-size: 28px;
+    margin: 8%; 
+  }
+  .static-text p{
+    font-size: 17px !important;
+    margin-left: 1.8rem;
+    }
+    .buttons{
+      margin-left: 1.8rem;
 
+    }
+    .app img {
+      margin-top: 0 !important;
+      width: 100%;
+  
+      }
+      .mt-7{
+        margin-top: 0 !important;
+      }
+}
+
+@media (max-width: 576px) { 
+  .dynamic-text {
+    font-size: 28px;
+    margin: 12%; 
+  }
+  .static-text p{
+    font-size: 17px !important;
+    margin-left: 1.8rem;
+    }
+    .buttons{
+      margin-left: 1.8rem;
+    }
+    .button1{
+      width: 75% !important;
+    }
+    .button2{
+      width: 70% !important;
+    }
+    .app img {
+      width: 100%;
+  
+      }
+      .mt-7{
+        margin-top: 0 !important;
+      }
+  
+}
 .button1 {
-  background: #2fad9f;
-  border: 1px solid #2fad9f;
+  background: #d3a00f;
+  border: 1px solid #d3a00f;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -61,7 +115,7 @@
 .button1:active {
   background-color: white;
   background-position: 0 0;
-  color: #2fad9f;
+  color: #d3a00f;
 }
 
 .button1:active {
@@ -70,12 +124,12 @@
 
 
 .button2 {
-  background: #1261b0;
-  border: 1px solid white;
+  background: white;
+  border: 1px solid #d3a00f;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: white;
+  color: #d3a00f;
   cursor: pointer;
   display: inline-block;
   font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
@@ -97,9 +151,9 @@
 
 .button2:hover,
 .button2:active {
-  background-color: white;
+  background-color: #d3a00f;
   background-position: 0 0;
-  color: #2fad9f;
+  color: white;
 }
 
 .button2:active {

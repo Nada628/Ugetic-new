@@ -8,13 +8,7 @@
     align-items: center;
     overflow: hidden;
 }
-.custom-navbar .navbar-nav .nav-link {
-    color: #ffcc00 !important; /* Change to your desired color */
-}
 
-.custom-navbar .navbar-nav .nav-link:hover {
-    color: #d3a00f !important; /* Change to your desired hover color */
-}
 .hover-card {
     transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
 }
@@ -25,16 +19,16 @@
 }
 
 .card-title-btn {
-    background-color: #777af212; 
-    color: #2fad9f; /* Text color */
-    border: none; /* Remove border */
-    border-radius: 25px; /* Rounded corners */
-    padding: 2px 10px; /* Reduced padding for a smaller button */
-    margin: 2px; /* Smaller margin around the button */
-    display: inline-flex; /* Use inline-flex for sizing */
-    align-items: center; /* Center the items vertically */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth background color change */
+    background-color: #dfdfea12; 
+    color: #d3a00f; 
+    border: none;
+    border-radius: 25px; 
+    padding: 2px 10px; 
+    margin: 2px; 
+    display: inline-flex; 
+    align-items: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .card-title-btn i {
@@ -43,16 +37,16 @@
 }
 
 .card-title-btn:hover {
-    background-color: #2fad9f; 
+    background-color: #d3a00f; 
     color: white;
 }
 .button1 {
-    background: #2fad9f;
-    border: 1px solid #2fad9f;
+    background: white;
+    border: 1px solid #d3a00f;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #d3a00f;
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -74,9 +68,9 @@
   
   .button1:hover,
   .button1:active {
-    background-color: white;
+    background-color: #d3a00f;
     background-position: 0 0;
-    color: #2fad9f;
+    color: white;
   }
   
   .button1:active {

@@ -1,19 +1,16 @@
 .main-container {
     background-image: url(../../../assets/images/home/circle-bg.png);
-    background-repeat: no-repeat; /* Prevent repeating */
-    background-size: cover; /* Adjust the size of the background image */
-    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
 }
 
     /* Trusted clients */
     .trusted-by {
-    /* background-color: #F5F5F5; */
     padding: 30px 20px;
     border-radius: 8px;
-    text-align: center;}
-
-
-
+    text-align: center;
+}
 
 .slick-slide{
     margin: 0 20px;
@@ -21,6 +18,8 @@
 .slick-slide img{
     width: 30%;
 }
+
+
 .slick-slider{
     position: relative;
     display: block;
@@ -40,8 +39,6 @@
     display: block
 }
 .slick-slide{
-    /* display: none; */
-    /* float: left; */
     height: 100%;
     min-height: 1px;
 }
@@ -51,3 +48,14 @@
 .slick-initialized .slick-slide{
     display: block;
 }
+@media (max-width: 576px) { 
+    .slick-slide img{
+        width: 50%;
+    }
+  }
+
+  @media (max-width: 992px) { 
+    .slick-slide img{
+        width: 60%;
+    }
+  }

@@ -6,6 +6,25 @@
       <img [src]="logo" alt="Logo" class="d-inline-block align-top">
     </a>
 
+    <!-- Toggler for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+            [ngClass]="{'': !navbarScrolled, '': navbarScrolled}">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Search Icon Fixed Position -->
+    <div class="search-icon-container  ">
+      <i class="fa-solid fa-magnifying-glass text-white icon" (click)="toggleSearchBox($event)"></i>
+    </div>
+    <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
+      <div class="icon-container">
+        <i class="fa-solid fa-magnifying-glass text-dark"></i>
+        <input type="text" [attr.placeholder]="currentPlaceholder" />
+      </div>
+    </div>
+    
+
     <!-- Language Selector (moved inside the navbar-collapse to align better) -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
@@ -33,53 +52,17 @@
           <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">
             <img [src]="currentLanguageImage" alt="Language Flag" class="dropdown-flag">
-            <!-- {{"Language" | translate}} -->
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" (click)="transalte('en')">{{"English" | translate}}</a></li>
             <li><a class="dropdown-item" (click)="transalte('ar')">{{"Arabic" | translate}}</a></li>
           </ul>
         </li>
-        <!-- search bar -->
-        <nav>
-          <ul class="nav">
-            <li class="nav-item me-3" (click)="toggleSearchBox($event)"> 
-              <i class="fa-solid fa-magnifying-glass mt-3 text-white icon"></i>
-            </li>
-          </ul>
-          <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
-            <div class="icon-container">
-              <i class="fa-solid fa-magnifying-glass text-dark"></i>
-              <input type="text" [attr.placeholder]="currentPlaceholder" />
-            </div>
-          </div>
-        </nav>
-        
-        
-        
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item  ms-3">
-          <button class="signup " routerLink="/login">{{"SignIn / SignUp" | translate}}</button>
+        <li class="nav-item ms-5">
+          <button class="signup" routerLink="/login">{{"SignIn / SignUp" | translate}}</button>
         </li>
       </ul>
     </div>
-
-    <!-- Toggler for small screens -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
   </div>
 </nav>

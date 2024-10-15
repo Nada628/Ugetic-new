@@ -30,8 +30,8 @@
 
 /* Adjust navbar-brand logo size */
 .navbar-brand img{
-  width: 190px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
   margin-left: 50px;
 }
 
@@ -63,16 +63,17 @@
 }
 
 /* Signup button styles */
+/* Signup button styles */
 .signup {
-  background-color: transparent;
+  background: #d3a00f; /* Initial background color */
   border: 1px solid #d3a00f;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
-  color: #d3a00f;
+  color: white; /* Text color for initial background */
   cursor: pointer;
   display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
@@ -83,17 +84,18 @@
   text-align: center;
   text-rendering: geometricprecision;
   text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #d3a00f 50%, white 50%);
+  transition: background-position 0.4s ease, color 0.4s ease; /* Smooth transition for background and text color */
+  background-position: 0 0; /* Initial position */
 }
 
 .signup:hover,
 .signup:active {
-  background-color: white;
-  color: #d3a00f;
+  background-position: -100% 0; /* Shift the gradient to show the white background */
+  color: #d3a00f; /* Change text color to match the border */
 }
+
 
 .signup:active {
   opacity: 0.5;

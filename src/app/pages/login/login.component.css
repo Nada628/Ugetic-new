@@ -12,7 +12,7 @@
     position: relative; 
     
 }
-.bg-img {
+/* .bg-img {
     background-color: #777af212 ; 
     height: 500px; 
     position: relative;
@@ -21,7 +21,13 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
+} */
+.bg-img {
+    background-image: url("../../../assets/images/home/home-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
 .button1 {
     background: white;
     border: 1px solid #d3a00f;

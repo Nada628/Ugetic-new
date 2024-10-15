@@ -46,6 +46,7 @@
 /* Adjust the margins of nav items */
 .nav-item {
   margin-right: 15px;
+  font-size: 0.9rem !important;
 }
 
 /* Hover and active states for nav links */
@@ -124,7 +125,7 @@
 }
 
 
-/* sarch animation */
+/* search animation */
 .nav {
   position: relative; 
 }
@@ -132,7 +133,7 @@
 .box {
   position: absolute; 
   top: 80px; 
-  right: 600px; 
+  right: 280px; 
   width: 45px;
   height: 45px; 
   overflow: hidden;
@@ -143,9 +144,9 @@
 }
 
 .box.expanded {
-  width: 500px; 
+  width: 577px; 
   height: auto; 
-  right: 393px !important; 
+  right: 297px !important; 
   border-radius: 10px; 
 }
 

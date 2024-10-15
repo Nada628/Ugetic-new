@@ -40,9 +40,35 @@
             <li><a class="dropdown-item" (click)="transalte('ar')">{{"Arabic" | translate}}</a></li>
           </ul>
         </li>
-        <li class="nav-item me-3">
-            <i class="fa-solid fa-magnifying-glass text-white mt-3" ></i>
-        </li>
+        <!-- search bar -->
+        <nav>
+          <ul class="nav">
+            <li class="nav-item me-3" (click)="toggleSearchBox($event)"> 
+              <i class="fa-solid fa-magnifying-glass mt-3 text-white icon"></i>
+            </li>
+          </ul>
+          <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
+            <div class="icon-container">
+              <i class="fa-solid fa-magnifying-glass text-dark"></i>
+              <input type="text" [attr.placeholder]="currentPlaceholder" />
+            </div>
+          </div>
+        </nav>
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         <li class="nav-item ms-3">
           <button class="signup" routerLink="/login">{{"Login" | translate}}</button>

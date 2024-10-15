@@ -9,7 +9,7 @@
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 16px;
     min-height: 40px;
     outline: 0;
@@ -51,9 +51,8 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  margin: auto; /* توسيط السلايدر */
-  max-width: 2000px; /* زيادة العرض */
-
+  margin: auto; 
+  max-width: 2000px; 
   padding: 0 50px; 
 }
 
@@ -85,10 +84,10 @@
   padding: 10px;
   cursor: pointer;
   /* background-color:#bbb; */
-  color: #2fad9f;
+  color: #d3a00f;
   border: 1px;
   border-radius: 5px;
-  border-color: #2fad9f;
+  border-color: #d3a00f;
   font-size: 20px;
   z-index: 10;
 }
@@ -111,7 +110,7 @@
   height: 10px;
   width: 10px;
   margin: 0 5px;
-  background-color: #2fad9f;
+  background-color: #21416f;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;

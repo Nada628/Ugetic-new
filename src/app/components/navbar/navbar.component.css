@@ -2,8 +2,7 @@
 /* Style for the navbar after scrolling */
 .navbar-scrolled {
   background-color: white; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Apply box shadow on scroll */
-  /* transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar-collapse.show {
@@ -16,6 +15,12 @@
 
 .navbar {
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
 }
 
 .navbar-toggler {
@@ -25,7 +30,7 @@
   z-index: 1; 
 }
 .navbar-toggler {
-  background-color: transparent; /* Make sure the background is transparent */
+  background-color: transparent; 
 }
 
 
@@ -76,6 +81,14 @@
   border-bottom: 2px solid #d3a00f;
   padding-bottom: 5px;
 }
+
+/* Exclude the hover and active styles from the dropdown link */
+.nav-item.dropdown .nav-link:hover,
+.nav-item.dropdown .nav-link:focus,
+.nav-item.dropdown .nav-link.active {
+  border-bottom: none !important; 
+}
+
 
 .navbar-nav .nav-link:hover {
   color: #d3a00f !important; 
@@ -177,9 +190,6 @@
   align-items: center; 
 }
 
-.icon-container i {
-  margin-left: 20px; 
-}
 
 .box input {
   border: none;
@@ -189,10 +199,12 @@
   border-radius: 10px; 
 }
 .search-icon-container {
-  position: fixed; 
-  right: 280px;
-  top: 25px; 
-  z-index: 1050; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto; 
+  position: relative;
+  left: 68%;
 }
 
 .icon {
@@ -269,6 +281,7 @@
     outline: none; 
   }
 }
+
 
 
 

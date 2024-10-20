@@ -87,3 +87,17 @@
 .ms-7{
     margin-left: 5rem;
 }
+.ms-8{
+    margin-left: 20rem;
+}
+
+@media (max-width: 991px) {
+    .hide-section {
+      display: none;
+      
+    }
+    .ms-8{
+        margin-left: 1rem !important;
+        margin-top: 10rem;
+    }
+  }

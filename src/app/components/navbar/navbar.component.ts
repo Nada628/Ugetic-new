@@ -10,14 +10,15 @@ import { TranslationService } from 'src/app/Services/translate.service';
 export class NavbarComponent implements OnInit, OnDestroy {
   navbarScrolled = false;
   currentLanguageImage!: string;
-  placeholderText: string = 'Search...';
+  placeholderText: string = 'What are you searching for? ...';
+  isTyping = false; 
   currentPlaceholder: string = '';
   currentIndex: number = 0;
-  typingSpeed: number = 100; // Speed of typing 
+  typingSpeed: number = 80; 
   isSearchBoxVisible = false; 
   isExpanded = false; 
   expandTimeout: any; 
-  logo = '../../../assets/images/home/ugitech--logo-02.png';  
+  logo = '../../../assets/images/home/ugitech--logo-02.png'; 
 
   constructor(
     private translationService: TranslationService,
@@ -30,23 +31,30 @@ export class NavbarComponent implements OnInit, OnDestroy {
     const lang = this.localStorageService.getItem('lang') || 'en';
     this.setLanguageImage(lang);
     console.log('Component initialized.');
-    this.animatePlaceholder();
 
   }
 
+  
   animatePlaceholder(): void {
-    console.log('Animating placeholder:', this.currentPlaceholder);
+    this.isTyping = true;
     if (this.currentIndex < this.placeholderText.length) {
       this.currentPlaceholder += this.placeholderText.charAt(this.currentIndex);
       this.currentIndex++;
-      console.log('Current Index:', this.currentIndex, 'Current Placeholder:', this.currentPlaceholder);
-
-      // Manually detect changes after each update
       this.cdr.detectChanges();
-
       setTimeout(() => this.animatePlaceholder(), this.typingSpeed);
     } else {
-      console.log('Typing animation completed.');
+      // Stop typing and clear the placeholder after a short delay
+      setTimeout(() => {
+        this.isTyping = false; // End typing state
+        this.currentPlaceholder = ''; // Allow user input
+        this.cdr.detectChanges();
+      }, 1000); // Adjust the delay before clearing as needed
+    }
+  }
+  
+  clearPlaceholder(): void {
+    if (!this.isTyping) {
+      this.currentPlaceholder = '';
     }
   }
 
@@ -69,53 +77,58 @@ export class NavbarComponent implements OnInit, OnDestroy {
     const scrollPosition = window.pageYOffset;
     if (scrollPosition > 50) {
       this.navbarScrolled = true;
-      this.logo = '../../../assets/images/home/logoblack.png'; // Scrolled logo
+      this.logo = '../../../assets/images/home/logoblack.png'; 
     } else {
       this.navbarScrolled = false;
-      this.logo = '../../../assets/images/home/ugitech--logo-02.png'; // Default logo
+      this.logo = '../../../assets/images/home/ugitech--logo-02.png';
     }
   }
 
   ngOnDestroy() {
-    // Clean up the event listener
     document.removeEventListener('click', this.onDocumentClick);
   }
 
   toggleSearchBox(event: MouseEvent) {
-    console.log('Search box toggled'); // Debug line
-
-    // Prevent the click event from bubbling up to the document
     event.stopPropagation();
-
-    // If the search box is already visible, hide it
+  
     if (this.isSearchBoxVisible) {
-      this.isSearchBoxVisible = false;
-      this.isExpanded = false; // Optionally reset the width
-      clearTimeout(this.expandTimeout); // Clear the timeout if it's running
-      return; // Exit early
+      this.isExpanded = false;
+  
+      setTimeout(() => {
+        this.isSearchBoxVisible = false;
+      }, 1000); // Duration should match the transition time in CSS
+      return; 
     }
-
-    // Show the search box immediately
+  
     this.isSearchBoxVisible = true; 
-    this.isExpanded = false; // Set initial width to 45px
-
+    this.isExpanded = false; 
+    this.currentPlaceholder = ''; 
+    this.currentIndex = 0; 
+    this.isTyping = false; 
+  
     // Clear any previous timeout to prevent multiple expansions
     if (this.expandTimeout) {
       clearTimeout(this.expandTimeout);
     }
+  
+   // Set a timeout to expand the input width after 1 second
+   this.expandTimeout = setTimeout(() => {
+    this.isExpanded = true;
 
-    // Set a timeout to expand the input width after 2 seconds
-    this.expandTimeout = setTimeout(() => {
-      this.isExpanded = true; 
-    }, 1000); // Changed to 2000ms as per your request
-  }
+    // Delay 
+    setTimeout(() => {
+      this.animatePlaceholder(); 
+    }, 1000);  //delay for start the placeholder
+  }, 1000); // Initial expand delay
+}
+
+  
 
   onDocumentClick = (event: MouseEvent) => {
-    // If the search box is visible, hide it when clicking outside
     if (this.isSearchBoxVisible && !(event.target instanceof HTMLInputElement)) {
       this.isSearchBoxVisible = false;
-      this.isExpanded = false; // Optionally reset the width
-      clearTimeout(this.expandTimeout); // Clear the timeout if it's running
+      this.isExpanded = false;
+      clearTimeout(this.expandTimeout);
     }
   }
 }

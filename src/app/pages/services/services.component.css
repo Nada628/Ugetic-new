@@ -121,3 +121,8 @@
   .button1:active {
     opacity: .5;
   }
+  @media(max-width:776px){
+    .step-wrapper::after{
+      display: none;
+    }
+  }

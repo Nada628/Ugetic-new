@@ -19,9 +19,16 @@
     </div>
     <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
       <div class="icon-container">
-        <i class="fa-solid fa-magnifying-glass text-dark"></i>
-        <input type="text" [attr.placeholder]="currentPlaceholder" />
-      </div>
+        <!-- <i class="fa-solid fa-magnifying-glass text-dark"></i> -->
+        <input 
+        type="text" 
+      [value]="currentPlaceholder" 
+      [readonly]="isTyping" 
+      (focus)="clearPlaceholder()"
+      [attr.aria-label]="placeholderText"
+      />   
+   
+    </div>
     </div>
     
 

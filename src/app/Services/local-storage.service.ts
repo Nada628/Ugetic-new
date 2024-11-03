@@ -8,7 +8,7 @@ export class LocalStorageService {
   constructor() { }
 
   getItem(name:string):string{
-   return localStorage.getItem(name) ?? 'en'
+   return localStorage.getItem(name) ?? 'ar'
   }
 
   setItem(name:string, value:string){

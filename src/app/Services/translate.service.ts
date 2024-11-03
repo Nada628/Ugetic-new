@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class TranslationService {
-  private currentLang = new BehaviorSubject<string>('en'); // Default language
+  private currentLang = new BehaviorSubject<string>('ar'); // Default language
   languageChanged = this.currentLang.asObservable();
 
   constructor(private translate: TranslateService) {}

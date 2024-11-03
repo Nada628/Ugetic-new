@@ -1,5 +1,6 @@
 * {
   overflow: hidden;
+  font-family: "bahij";
 }
 
 #bg-img {
@@ -11,9 +12,11 @@
 
 
 .ms-lg-6 {
-  margin-left: 5.5rem !important;
+  margin-left: 1rem !important;  /* or 5.5 */
 }
-
+.me-custome{
+  margin-right: 4rem;
+}
 .ms-xl-6 {
   margin-left: 0 !important;
   /* Remove the left margin on mobile */
@@ -114,7 +117,7 @@
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-family: 'bahij';
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
@@ -152,7 +155,7 @@
   color: #d3a00f;
   cursor: pointer;
   display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-family: 'bahij';
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
@@ -249,7 +252,9 @@
 }
 
 .static-text p {
-  font-size: 18px;
+  font-size: 0.9rem;
+  line-height: 2;
+  margin-right: 4rem;
 }
 
 .ms-lg-5-5 {

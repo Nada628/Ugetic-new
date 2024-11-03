@@ -100,7 +100,7 @@
   color: white; 
   cursor: pointer;
   display: inline-block;
-  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-family: 'bahij';
   font-weight: normal;
   line-height: 16px;
   width: 100%;
@@ -229,7 +229,7 @@
 }
 .search-icon-container {
   position: fixed; 
-  right: 280px;
+  right: 310px;  /* ar 310 en 280*/
   top: 25px; 
   z-index: 1050; 
 }

@@ -1,24 +1,29 @@
 
 .left-text p{
     font-size: 40px;
+    font-family: 'bahij';
     color: #132f55;
 }
 .right-text p{
     font-size: large;
     color: #132f55;
+    font-family: 'bahij';
+
 }
 .card {
-    width: 170px; /* Fixed width for square shape */
-    height: 170px; /* Fixed height for square shape */
+    width: 170px;
+    height: 170px; 
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-caption {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #132f55;
+    width: 75%;
+    font-family: 'bahij';
 }
 .icon i{
     color: #132f55;
@@ -26,13 +31,13 @@
 
 #unique {
     background-image: url('../../../assets/images/home/circle-bg.png'); 
-    background-size: cover; /* Ensures the image covers the whole container */
-    background-size: 100% auto; /* 90% width of the container, auto height */
+    background-size: cover;  
+    background-size: 100% auto; 
   
     padding-top: 50px;
-    padding-bottom: 50px;  background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    min-height: 100vh; /* Ensures the container covers at least the full viewport height */
+    padding-bottom: 50px;  background-position: center center; 
+    background-repeat: no-repeat;
+    min-height: 100vh; 
   }
   
 @media(max-width:576px){

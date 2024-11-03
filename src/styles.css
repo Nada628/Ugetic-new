@@ -16,24 +16,21 @@ body{
 
   height: 100vh;
   overflow-x: hidden;
-
+  font-family: "bahij";
 }
 /* ----------------  fonts  --------------------- */
 @font-face {
-  font-family: "Righteous";
-  src: url(./assets/fonts/Righteous-Regular.ttf);
+  font-family: "bahij";
+  src: url(./assets/fonts/alfont_com_ArbFONTS-Bahij_TheSansArabic-Plain.ttf);
 }
-@font-face {
-  font-family: "Poppins";
-  src: url(./assets/fonts/Poppins-Regular.ttf);
-}
+
 .title-font {
-  font-family: "", sans-serif;
+  font-family: "bahij", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 .body-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "bahij", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

@@ -6,9 +6,7 @@
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white d-flex flex-column align-items-center">
             <p class="fs-1 fw-bold mb-4">{{"contact.header1"|translate}}</p>
             
-            <p class="fw-semibold fs-6 text-center text-light"> 
-                We make your business stand out. Interested? Let's chat.
-            </p>
+            <p class="fw-semibold fs-6 text-center text-light"> {{"contact.header2"|translate}}</p>
         </div>
     </div> 
 
@@ -16,24 +14,23 @@
         <div class="row">
             <!-- Left Column: Form -->
             <div class="col-md-6 d-flex flex-column align-items-center">
-                <p class="mb-4 text-blue fs-5 text-center mt-5 fw-bold">
-                    Have some questions or want to say hi?
-                </p>
-                <p class="mb-4 text-blue fs-5 text-center w-75">
-                    Anything you ask, no matter how small, will make a big difference in helping us.
-                </p>
+                <p class="mb-4 text-blue fs-5 text-center mt-5 fw-bold">{{"formHeader"|translate}}</p>
+                <p class="mb-4 text-blue fs-custome text-center fw-semibold">{{"formP"|translate}}</p>
                 <form class="w-75 mt-4"> 
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <div class="mb-3"> 
+                      <input type="text" class="form-control" id="name" [placeholder]="'form-name' | translate" required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <input type="email" class="form-control" id="email" [placeholder]="'form-email' | translate" required>
+                    </div>
+                    <div class="mb-3"> 
+                      <input type="text" class="form-control" id="name" [placeholder]="'form-company' | translate" required>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                        <textarea class="form-control" id="message" rows="4" [placeholder]="'form-message' | translate" required></textarea>
                     </div>
                     <div class="text-center"> 
-                        <button type="submit" class="btn button1">Submit</button>
+                        <button type="submit" class="btn button1">{{"send-message"|translate}}</button>
                     </div>
                 </form>
             </div>

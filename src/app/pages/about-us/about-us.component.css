@@ -1,13 +1,16 @@
+.bg-img, .solutions{
+    font-family: 'bahij';
+}
 .hover-shadow {
     transition: box-shadow 0.3s ease;
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker shadow for hover */
-    transform: scale(1.05); /* Optional: slightly scale up the card */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.05); 
 }
 .card-img-top {
-    border-radius: 10px; /* Adjust radius as needed */
+    border-radius: 10px; 
     transition: transform 0.3s; /* For smooth hover effect */
 }
 
@@ -38,7 +41,7 @@
     color: #d3a00f;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: 'bahij';
     font-size: 16px;
     font-weight: normal;
     line-height: 16px;

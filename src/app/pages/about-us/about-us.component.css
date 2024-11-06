@@ -11,11 +11,11 @@
 }
 .card-img-top {
     border-radius: 10px; 
-    transition: transform 0.3s; /* For smooth hover effect */
+    transition: transform 0.3s; 
 }
 
 .cardy:hover .cardy-img-top {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
 .img-overlap {
@@ -104,3 +104,6 @@
         margin-top: 10rem;
     }
   }
+.feedback{
+    font-family: 'bahij';
+}

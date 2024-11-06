@@ -16,4 +16,7 @@
   .carousel-control-prev, .carousel-control-next {
     filter: invert(1); /* Optional: makes the control icons white */
   }
+  *{
+    font-family: 'bahij';
+  }
   

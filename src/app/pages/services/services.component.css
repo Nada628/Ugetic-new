@@ -1,6 +1,9 @@
+*{
+  font-family: 'bahij';
+}
 .custome-card {
-    width: 170px; /* Fixed width for square shape */
-    height: 170px; /* Fixed height for square shape */
+    width: 170px; 
+    height: 170px; 
     border-radius: 5px;
     border-color: #f5f6fe;
     background-color: #f5f6fe ;

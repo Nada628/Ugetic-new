@@ -1,7 +1,6 @@
 .mt-6{
     margin-top: 8rem;
   }
-  /* Custom styles for the accordion */
   .accordion-item {
     margin-bottom: 1rem; 
     border: 0.8px solid #e7e7e7; 
@@ -21,4 +20,6 @@
   .accordion-body {
     background-color: #fff; 
   }
- 
+ *{
+  font-family: 'bahij';
+ }

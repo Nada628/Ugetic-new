@@ -45,7 +45,7 @@
     content: '';
     position: absolute;
     top: 35px; /* Adjust this to align with circle */
-    left: 70%;
+    right: 70%;
     width: 200px;
     height: 1px;
     background-color: #ddd;
@@ -97,7 +97,7 @@
     color: #d3a00f;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: 'bahij';
     font-size: 16px;
     font-weight: normal;
     line-height: 16px;
@@ -129,3 +129,29 @@
       display: none;
     }
   }
+
+  .mt-6{
+    margin-top: 8rem;
+  }
+  .accordion-item {
+    margin-bottom: 1rem; 
+    border: 0.8px solid #e7e7e7; 
+    border-radius: 4px; 
+  }
+
+  .accordion-button {
+    border: none; 
+    background-color: #fff;
+    color: #132f55; 
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #132f55; 
+  }
+
+  .accordion-body {
+    background-color: #fff; 
+  }
+ *{
+  font-family: 'bahij';
+ }

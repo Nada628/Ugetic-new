@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabs.component.css']
 })
 export class TabsComponent {
- 
+  selectedTab: number = 1;
+  selectTab(tabNumber: number) {
+    this.selectedTab = tabNumber;
+  }
 }

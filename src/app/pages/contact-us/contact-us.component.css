@@ -1,15 +1,19 @@
+.bg-img{
+    font-family: 'bahij';
+}
 .image-column img {
-    border-radius: 0 15px 15px 0; /* Rounded corners on the right side of the image */
-    width: 100%; /* Full width of the column */
-    height: auto; /* Maintain aspect ratio */
+    border-radius: 0 15px 15px 0; 
+    width: 100%; 
+    height: auto;
 }
 
 #Contact-us {
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 20px; /* Padding inside the container */
-    background-color: #fff; /* White background */
-    position: relative; /* Ensure it can be positioned relative to its parent */
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    background-color: #fff; 
+    position: relative; 
+    font-family: 'bahij';
 }
 
 .button1 {
@@ -21,7 +25,7 @@
     color: #d3a00f;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-family: 'bahij';
     font-size: 16px;
     font-weight: normal;
     line-height: 16px;
@@ -57,9 +61,9 @@
     left: 180px; 
     width: 380px; 
     height: 500px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Internal padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    padding: 20px; 
   }
   
   .fs-custome{

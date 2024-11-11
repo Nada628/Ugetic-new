@@ -14,67 +14,82 @@
     </div>
   </div>
   <div class="row mt-5" data-aos="fade-up" data-aos-delay="300">
-    <div class="col-lg-4 col-sm-10"> 
+    <div class="col-lg-4 col-sm-10">
       <!-- Tab navs as cards -->
       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <div class="card mb-3">
-          <a class="nav-link active" id="v-pills-link1-tab" data-bs-toggle="pill" href="#v-pills-link1" role="tab"
-            aria-controls="v-pills-link1" aria-selected="true">
+        <div
+          class="card mb-3"
+          [ngClass]="{'active': selectedTab === 1, 'deselected': selectedTab !== 1}"
+          (click)="selectTab(1)"
+        >
+          <a class="nav-link" role="tab">
             <div class="card-body">
-              <h5 class="card-title text-blue fw-bold">{{"tabs.tab1-title"|translate}}</h5>
-              <p class="card-text text-secondary fw-semibold">{{"tabs.tab1-desc"|translate}}</p>
+              <h5 class="card-title text-blue fw-bold">{{"tabs.tab1-title" | translate}}</h5>
+              <p class="card-text text-secondary fw-semibold">{{"tabs.tab1-desc" | translate}}</p>
             </div>
           </a>
+          <div class="border-anim"></div> <!-- Animated border -->
         </div>
-        <div class="card mb-3">
-          <a class="nav-link" id="v-pills-link2-tab" data-bs-toggle="pill" href="#v-pills-link2" role="tab"
-            aria-controls="v-pills-link2" aria-selected="false">
+        <!-- Repeat for other tabs -->
+        <div
+          class="card mb-3"
+          [ngClass]="{'active': selectedTab === 2, 'deselected': selectedTab !== 2}"
+          (click)="selectTab(2)"
+        >
+          <a class="nav-link" role="tab">
             <div class="card-body">
-              <h5 class="card-title text-blue fw-bold">{{"tabs.tab2-title"|translate}}</h5>
-              <p class="card-text text-secondary fw-semibold">{{"tabs.tab2-desc"|translate}}</p>
+              <h5 class="card-title text-blue fw-bold">{{"tabs.tab2-title" | translate}}</h5>
+              <p class="card-text text-secondary fw-semibold">{{"tabs.tab2-desc" | translate}}</p>
             </div>
           </a>
+          <div class="border-anim"></div> <!-- Animated border -->
         </div>
-        <div class="card mb-3">
-          <a class="nav-link" id="v-pills-link3-tab" data-bs-toggle="pill" href="#v-pills-link3" role="tab"
-            aria-controls="v-pills-link3" aria-selected="false">
+        <!-- Additional tabs -->
+        <div
+          class="card mb-3"
+          [ngClass]="{'active': selectedTab === 3, 'deselected': selectedTab !== 3}"
+          (click)="selectTab(3)"
+        >
+          <a class="nav-link" role="tab">
             <div class="card-body">
-              <h5 class="card-title text-blue fw-bold">{{"tabs.tab3-title"|translate}}</h5>
-              <p class="card-text text-secondary fw-semibold">{{"tabs.tab3-desc"|translate}}</p>
+              <h5 class="card-title text-blue fw-bold">{{"tabs.tab3-title" | translate}}</h5>
+              <p class="card-text text-secondary fw-semibold">{{"tabs.tab3-desc" | translate}}</p>
             </div>
           </a>
+          <div class="border-anim"></div> <!-- Animated border -->
         </div>
-        <div class="card mb-3">
-          <a class="nav-link" id="v-pills-link4-tab" data-bs-toggle="pill" href="#v-pills-link4" role="tab"
-            aria-controls="v-pills-link4" aria-selected="false">
+        <div
+          class="card mb-3"
+          [ngClass]="{'active': selectedTab === 4, 'deselected': selectedTab !== 4}"
+          (click)="selectTab(4)"
+        >
+          <a class="nav-link" role="tab">
             <div class="card-body">
-              <h5 class="card-title text-blue fw-bold">{{"tabs.tab4-title"|translate}}</h5>
-              <p class="card-text text-secondary fw-semibold">{{"tabs.tab4-desc"|translate}}</p>
+              <h5 class="card-title text-blue fw-bold">{{"tabs.tab4-title" | translate}}</h5>
+              <p class="card-text text-secondary fw-semibold">{{"tabs.tab4-desc" | translate}}</p>
             </div>
           </a>
+          <div class="border-anim"></div> <!-- Animated border -->
         </div>
       </div>
-      <!-- Tab navs -->
     </div>
   
     <div class="col-lg-8 col-sm-10">
-      <!-- Tab content -->
-      <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-link1" role="tabpanel" aria-labelledby="v-pills-link1-tab">
-          <img src="../../../assets/images/home/tabs/saas-tab1x.jpg" class="img-fluid" alt="Image for Link 1">
-        </div>
-        <div class="tab-pane fade" id="v-pills-link2" role="tabpanel" aria-labelledby="v-pills-link2-tab">
-          <img src="../../../assets/images/home/tabs/saas-tab2x.jpg" class="img-fluid" alt="Image for Link 1">
-        </div>
-        <div class="tab-pane fade" id="v-pills-link3" role="tabpanel" aria-labelledby="v-pills-link3-tab">
-          <img src="../../../assets/images/home/tabs/saas-tab3x.jpg" class="img-fluid" alt="Image for Link 1">
-        </div>
-        <div class="tab-pane fade" id="v-pills-link4" role="tabpanel" aria-labelledby="v-pills-link4-tab">
-          <img src="../../../assets/images/home/tabs/saas-tab4x.jpg" class="img-fluid" alt="Image for Link 1">
-        </div>
+      <!-- Tab content controlled by Angular -->
+      <div *ngIf="selectedTab === 1">
+        <img src="../../../assets/images/home/tabs/saas-tab1x.jpg" class="img-fluid" alt="Image for Link 1">
       </div>
-      <!-- Tab content -->
+      <div *ngIf="selectedTab === 2">
+        <img src="../../../assets/images/home/tabs/saas-tab2x.jpg" class="img-fluid" alt="Image for Link 2">
+      </div>
+      <div *ngIf="selectedTab === 3">
+        <img src="../../../assets/images/home/tabs/saas-tab3x.jpg" class="img-fluid" alt="Image for Link 3">
+      </div>
+      <div *ngIf="selectedTab === 4">
+        <img src="../../../assets/images/home/tabs/saas-tab4x.jpg" class="img-fluid" alt="Image for Link 4">
+      </div>
     </div>
   </div>
+  
   
 </div>

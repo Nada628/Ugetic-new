@@ -29,7 +29,8 @@ import { PriceCardComponent } from './components/price-card/price-card.component
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-import { HomeCallToActionComponent } from './home-call-to-action/home-call-to-action.component';
+import { HomeCallToActionComponent } from './components/home-call-to-action/home-call-to-action.component';
+import { OurMissionAndVissionComponent } from './our-mission-and-vission/our-mission-and-vission.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -61,6 +62,7 @@ export function createTranslateLoader(http: HttpClient) {
     SingleBlogComponent,
     PrivacyPolicyComponent,
     HomeCallToActionComponent,
+    OurMissionAndVissionComponent,
 
   ],
 

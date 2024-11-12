@@ -146,36 +146,7 @@
   opacity: .5;
 }
 
-.signup {
-  background: #d3a00f; /* Initial background color */
-  border: 1px solid #d3a00f;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: white; 
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'bahij';
-  font-weight: normal;
-  line-height: 16px;
-  width: 100%;
-  min-height: 45px;
-  outline: 0;
-  padding: 12px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  background-size: 200% 100%;
-  background-image: linear-gradient(to right, #d3a00f 50%, white 50%);
-  transition: background-position 0.4s ease, color 0.4s ease; 
-  background-position: 0 0;
-}
 
-.signup:hover,
-.signup:active {
-  background-position: -100% 0; 
-  color: #d3a00f; 
-}
 
 
 .button2 {

@@ -20,3 +20,70 @@ color: white;
 .footer-logo img{
 width: 30%;
 }
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s, border-bottom 0.3s;
+
+      &:hover {
+        border-bottom: 2px solid #fff; /* Underline on hover */
+      }
+    }
+  }
+}
+
+.social-icons {
+  .icon {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #d3a00f; /* Change icon color on hover */
+    }
+  }
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to place items in a row */
+  gap: 15px; /* Space between the links */
+}
+
+.footer-links li {
+  display: inline; /* Ensure each list item is inline */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-bottom 0.3s;
+}
+
+.footer-links a:hover {
+  border-bottom: 2px solid #fff; /* Underline on hover */
+}

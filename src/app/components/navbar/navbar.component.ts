@@ -10,7 +10,7 @@ import { TranslationService } from 'src/app/Services/translate.service';
 export class NavbarComponent implements OnInit, OnDestroy {
   navbarScrolled = false;
   currentLanguageImage!: string;
-  placeholderText: string = 'What are you searching for? ...';
+  placeholderText: string = ' ما الذي تبحث عنه ؟ ...';
   isTyping = false; 
   currentPlaceholder: string = '';
   currentIndex: number = 0;

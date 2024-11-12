@@ -15,7 +15,7 @@
   margin-left: 1rem !important;  /* or 5.5 */
 }
 .me-custome{
-  margin-right: 4rem;
+  margin-right: 6rem;
 }
 .ms-xl-6 {
   margin-left: 0 !important;
@@ -72,27 +72,40 @@
     font-size: 28px;
     margin: 12%;
   }
-
+   .static-text{
+    margin-right: -2rem !important;
+   }
   .static-text p {
+    justify-content:center;
     font-size: 17px !important;
-    margin-left: 1.8rem;
+    width: 100%;
+    /* margin-left: 1.8rem; */
   }
 
-  .buttons {
-    margin-left: 1.8rem;
+  /* .buttons {
+    margin-right: 1rem;
+  } */
+  .me-custome{
+    margin-right: 3rem;
+  }
+  .me-negative{
+    margin-right: 0px;
   }
 
   .button1 {
-    width: 75% !important;
+    margin-left: 5rem;
+
+    width: 60% !important;
   }
 
   .button2 {
-    width: 70% !important;
+    width: 60% !important;
+    margin-right: 5rem;
+
   }
 
   .app img {
-    width: 100%;
-
+     display: none;
   }
 
   .mt-7 {
@@ -100,7 +113,7 @@
   }
 
   .ms-lg-5-5 {
-    margin-left: 0 !important;
+    margin-right: 1rem !important;
   }
   .ms-lg-6{
     margin-left: 0 !important;
@@ -258,11 +271,11 @@
 .static-text p {
   font-size: 0.9rem;
   line-height: 2;
-  margin-right: 4rem;
+  margin-right: 5.5rem;
 }
 
 .ms-lg-5-5 {
-  margin-left: 2rem;
+  margin-right: 1.5rem;
 }
 .m-negative{
   margin-right: -2rem !important;

@@ -2,39 +2,18 @@
      [ngClass]="{'navbar-scrolled': navbarScrolled}">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand" routerLink="/home">
+    <a class="navbar-brand me-auto" routerLink="/home">
       <img [src]="logo" alt="Logo.png" class="d-inline-block align-top">
     </a>
 
     <!-- Toggler for small screens -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-            [ngClass]="{'': !navbarScrolled, '': navbarScrolled}">
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Search Icon Fixed Position -->
-    <div class="search-icon-container  ">
-      <i class="fa-solid fa-magnifying-glass text-white icon" (click)="toggleSearchBox($event)"></i>
-    </div>
-    <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
-      <div class="icon-container">
-        <!-- <i class="fa-solid fa-magnifying-glass text-dark"></i> -->
-        <input 
-        type="text" 
-      [value]="currentPlaceholder" 
-      [readonly]="isTyping" 
-      (focus)="clearPlaceholder()"
-      [attr.aria-label]="placeholderText"
-      />   
-   
-    </div>
-    </div>
-    
-
-    <!-- Language Selector (moved inside the navbar-collapse to align better) -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ">
         <li class="nav-item me-3">
           <a class="nav-link text-white" routerLink="/home">{{"Home" | translate}}</a>
         </li>
@@ -54,22 +33,39 @@
           <a class="nav-link text-white" routerLink="/contact-us">{{"ContactUs" | translate}}</a>
         </li>
 
+        <!-- Search Icon in the Nav List -->
+        <li class="nav-item me-3 mt-2">
+          <i class="fa-solid fa-magnifying-glass text-white icon" (click)="toggleSearchBox($event)"></i>
+        </li>
+
         <!-- Dropdown -->
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown me-3">
           <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
              data-bs-toggle="dropdown" aria-expanded="false">
-            <img [src]="currentLanguageImage" alt="Language Flag" class="dropdown-flag">
+            <img [src]="currentLanguageImage" alt="Language Flag" class="dropdown-flag ms-1">
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!-- <li><a class="dropdown-item" (click)="transalte('en')">{{"English" | translate}}</a></li> -->
+          <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" (click)="transalte('ar')">{{"Arabic" | translate}}</a></li>
           </ul>
         </li>
 
-        <li class="nav-item ms-5">
-          <button class="signup " routerLink="/login">{{"sign" | translate}}</button>
+        <li class="nav-item ms-1">
+          <button class="signup" routerLink="/login">{{"sign" | translate}}</button>
         </li>
       </ul>
+    </div>
+
+    <!-- Search Box Animation (Outside Navbar Collapse) -->
+    <div class="box" *ngIf="isSearchBoxVisible" [ngClass]="{'expanded': isExpanded}">
+      <div class="icon-container">
+        <input 
+          type="text" 
+          [value]="currentPlaceholder" 
+          [readonly]="isTyping" 
+          (focus)="clearPlaceholder()"
+          [attr.aria-label]="placeholderText"
+        />
+      </div>
     </div>
   </div>
 </nav>

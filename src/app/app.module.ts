@@ -30,7 +30,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { HomeCallToActionComponent } from './components/home-call-to-action/home-call-to-action.component';
-import { OurMissionAndVissionComponent } from './our-mission-and-vission/our-mission-and-vission.component';
+import { OurMissionAndVissionComponent } from './components/our-mission-and-vission/our-mission-and-vission.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -63,6 +64,7 @@ export function createTranslateLoader(http: HttpClient) {
     PrivacyPolicyComponent,
     HomeCallToActionComponent,
     OurMissionAndVissionComponent,
+    SideBarComponent,
 
   ],
 

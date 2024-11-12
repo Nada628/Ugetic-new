@@ -2,7 +2,7 @@
     font-family: 'bahij';
 }
 .bg{
-    background-color: #1261b0;
+    background: linear-gradient(to right, #21416f, #1261b0);
 }
 .me-custome{
     margin-right: 7rem;
@@ -15,7 +15,7 @@
 .my-custom-btn {
     margin-top: 8rem;
     margin-bottom: 7rem;
-    margin-right: 5rem;
+    margin-right: 18rem;
 }
 .button1 {
     background: #d3a00f;
@@ -41,6 +41,7 @@
     transition: background-position 0.4s ease, color 0.4s ease; 
     background-position: 0 0;
     vertical-align: middle;
+    width: 30%;
   }
   
   .button1:hover,
@@ -52,4 +53,23 @@
   
   .button1:active {
     opacity: .5;
+  }
+  @media(max-width:500px){
+    .me-custome{
+        font-size: 1rem !important;
+        margin-right: 1.5rem !important;
+    }
+    .my-custom{
+        margin-top: 3rem;
+        margin-bottom:  0rem !important;
+        line-height: 1.8em;
+    }
+    .my-custom-btn {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        margin-right:  7rem !important;
+    }
+    .button1{
+        width: 43%;
+    }
   }

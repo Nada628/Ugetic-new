@@ -2,6 +2,9 @@
 *{
   font-family: 'bahij';
 }
+.card-text{
+  font-size: 0.9rem !important;
+}
 .text-blue{
   color: #132f55;
 }

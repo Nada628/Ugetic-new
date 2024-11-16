@@ -1,0 +1,17 @@
+<nav class="navbar fixed-bottom">
+    <ul class="nav-list">
+      <li class="nav-item" [class.active]="activeSection === 'home'">
+        <a href="#home" (click)="scrollToSection('home')">Home</a>
+      </li>
+      <li class="nav-item" [class.active]="activeSection === 'about'">
+        <a href="#about" (click)="scrollToSection('about')">About</a>
+      </li>
+      <li class="nav-item" [class.active]="activeSection === 'services'">
+        <a href="#services" (click)="scrollToSection('services')">Services</a>
+      </li>
+      <li class="nav-item" [class.active]="activeSection === 'contact'">
+        <a href="#contact" (click)="scrollToSection('contact')">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  

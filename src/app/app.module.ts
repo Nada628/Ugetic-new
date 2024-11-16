@@ -32,6 +32,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { HomeCallToActionComponent } from './components/home-call-to-action/home-call-to-action.component';
 import { OurMissionAndVissionComponent } from './components/our-mission-and-vission/our-mission-and-vission.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -65,6 +66,7 @@ export function createTranslateLoader(http: HttpClient) {
     HomeCallToActionComponent,
     OurMissionAndVissionComponent,
     SideBarComponent,
+    NavigationBarComponent,
 
   ],
 

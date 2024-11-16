@@ -10,7 +10,7 @@ export class featureOneComponent implements OnInit{
   ngOnInit(): void {
     AOS.init({
       duration: 2000,
-      once: false,
+      once: true,
     });
   }
 }

@@ -89,4 +89,8 @@ body{
   color:  #21416f;
 
 }
-
+@media(max-width:560px){
+  .body{
+    overflow-x: hidden !important;
+  }
+}

@@ -1,4 +1,14 @@
-
+.navbar {
+    width: 100%;
+    max-width: 1200px; /* Example max width */
+    margin: 40px auto; /* Center the navbar within the container */
+    /* background-color: #fff; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
   
   .nav-list {
     display: flex;

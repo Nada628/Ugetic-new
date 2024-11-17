@@ -30,7 +30,14 @@
 .dynamic-text {
   font-size: 40px;
   font-weight: bold;
-  margin: 12%;
+  margin-top: 12%;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 7%;
+
+
+
+
 }
 
 @media (max-width: 992px) {

@@ -1,0 +1,96 @@
+<div class="container mt-5 ">
+    <div class="row">
+      <div class="text-center">
+        <p class="text-center text-blue fw-semibold fs-4">
+          {{"store-tabs.header"|translate}}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <p class="text-center text-blue fw-bold fs-5">
+                 {{"store-tabs.pragraph"|translate}}     
+                 </p>
+      </div>
+    </div>
+    <div class="row mt-5" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-lg-4 col-sm-9">
+        <!-- Tab navs as cards -->
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div
+            class="card mb-3"
+            [ngClass]="{'active': selectedTab === 1, 'deselected': selectedTab !== 1}"
+            (click)="selectTab(1)"
+          >
+            <a class="nav-link" role="tab">
+              <div class="card-body">
+                <h6 class="card-title text-blue fw-bold">{{"store-tabs.tab1-title" | translate}}</h6>
+                <p class="card-text text-secondary  fw-semibold">{{"store-tabs.tab1-desc" | translate}}</p>
+              </div>
+            </a>
+            <div class="border-anim"></div> <!-- Animated border -->
+          </div>
+          <!-- Repeat for other tabs -->
+          <div
+            class="card mb-3"
+            [ngClass]="{'active': selectedTab === 2, 'deselected': selectedTab !== 2}"
+            (click)="selectTab(2)"
+          >
+            <a class="nav-link" role="tab">
+              <div class="card-body">
+                <h6 class="card-title text-blue fw-bold">{{"store-tabs.tab2-title" | translate}}</h6>
+                <p class="card-text text-secondary fw-semibold">{{"store-tabs.tab2-desc" | translate}}</p>
+              </div>
+            </a>
+            <div class="border-anim"></div> <!-- Animated border -->
+          </div>
+          <!-- Additional tabs -->
+          <div
+            class="card mb-3"
+            [ngClass]="{'active': selectedTab === 3, 'deselected': selectedTab !== 3}"
+            (click)="selectTab(3)"
+          >
+            <a class="nav-link" role="tab">
+              <div class="card-body">
+                <h6 class="card-title text-blue fw-bold">{{"store-tabs.tab3-title" | translate}}</h6>
+                <p class="card-text text-secondary fw-semibold">{{"store-tabs.tab3-desc" | translate}}</p>
+              </div>
+            </a>
+            <div class="border-anim"></div> <!-- Animated border -->
+          </div>
+          <div
+            class="card mb-3"
+            [ngClass]="{'active': selectedTab === 4, 'deselected': selectedTab !== 4}"
+            (click)="selectTab(4)"
+          >
+            <a class="nav-link" role="tab">
+              <div class="card-body">
+                <h6 class="card-title text-blue fw-bold">{{"store-tabs.tab4-title" | translate}}</h6>
+                <p class="card-text text-secondary fw-semibold">{{"store-tabs.tab4-desc" | translate}}</p>
+              </div>
+            </a>
+            <div class="border-anim"></div> <!-- Animated border -->
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-8 col-sm-9">
+        <!-- Tab content  -->
+        <div *ngIf="selectedTab === 1">
+          <img src="../../../assets/images/home/المشاريع-الهندسية.png" class="img-fluid" alt="Image for Link 1">
+        </div>
+        <div *ngIf="selectedTab === 2">
+          <img src="../../../assets/images/home/الاشراف-الهندسي.png" class="img-fluid" alt="Image for Link 2">
+        </div>
+        <div *ngIf="selectedTab === 3">
+          <img src="../../../assets/images/home/الدفع-الالكتروني.png" class="img-fluid" alt="Image for Link 3">
+        </div>
+        <div *ngIf="selectedTab === 4">
+          <img src="../../../assets/images/home/الدفع-الالكتروني.png" class="img-fluid" alt="Image for Link 4">
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  

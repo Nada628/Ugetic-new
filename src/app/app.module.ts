@@ -40,6 +40,10 @@ import { EomSliderComponent } from './pages/eom/eom-slider/eom-slider.component'
 import { EomFeature1Component } from './pages/eom/eom-feature1/eom-feature1.component';
 import { EomFeatureTwoThreeComponent } from './pages/eom/eom-feature-two-three/eom-feature-two-three.component';
 import { EomTabsComponent } from './pages/eom/eom-tabs/eom-tabs.component';
+import { StoreHeaderComponent } from './pages/store/store-header/store-header.component';
+import { StoreFeatureOneComponent } from './pages/store/store-feature-one/store-feature-one.component';
+import { StoreFeatureTwoThreeComponent } from './pages/store/store-feature-two-three/store-feature-two-three.component';
+import { StoreTabsComponent } from './pages/store/store-tabs/store-tabs.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -81,6 +85,10 @@ export function createTranslateLoader(http: HttpClient) {
     EomFeature1Component,
     EomFeatureTwoThreeComponent,
     EomTabsComponent,
+    StoreHeaderComponent,
+    StoreFeatureOneComponent,
+    StoreFeatureTwoThreeComponent,
+    StoreTabsComponent,
 
   ],
 

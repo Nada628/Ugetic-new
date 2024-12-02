@@ -1,13 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TranslationService } from 'src/app/Services/translate.service';
 import { Subscription } from 'rxjs';
-
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-store-header',
+  templateUrl: './store-header.component.html',
+  styleUrls: ['./store-header.component.css']
 })
-export class HeaderComponent implements OnInit, OnDestroy {
+export class StoreHeaderComponent {
   currentIconClass: string = 'fa-solid fa-arrow-right';
   private langChangeSubscription: Subscription | undefined;
 

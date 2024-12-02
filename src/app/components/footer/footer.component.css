@@ -2,7 +2,8 @@
 #footer{
   background-color:#143055;
   font-family: 'bahij';
-
+  position: relative; /* To ensure that the footer and the round section are positioned correctly */
+  z-index: 1; 
 }
 
 .footer-element{

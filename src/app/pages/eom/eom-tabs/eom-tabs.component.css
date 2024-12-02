@@ -1,0 +1,83 @@
+
+*{
+    font-family: 'bahij';
+  }
+  .card-text{
+    font-size: 0.9rem !important;
+  }
+  .text-blue{
+    color: #132f55;
+  }
+  .nav-pills .nav-link.active {
+    background-color: transparent; 
+    color: inherit; 
+    border: none; 
+    box-shadow: 2px 2px 4px rgba(148, 148, 187, 2); 
+  }
+  .card.active .card-title::before {
+    content: "\2022"; /* Unicode character for bullet point */
+    color: #132f55;
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  .card.active {
+    border-top: none; /* Remove default border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to the active card */
+  
+  }
+  .card {
+    position: relative;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd; /* Default card border */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+  
+  }
+  .card.active .border-anim {
+    animation: slideIn 0.5s forwards;
+  }
+  .card.deselected .border-anim {
+    animation: slideOut 0.5s forwards;
+  }
+  /* Animation for border moving from right to left */
+  @keyframes slideIn {
+    from {
+      left: 100%;
+      width: 0;
+    }
+    to {
+      left: 0;
+      width: 100%;
+    }
+  }
+  
+  /* Animation for border moving from left to right */
+  @keyframes slideOut {
+    from {
+      left: 0;
+      width: 100%;
+    }
+    to {
+      left: 100%;
+      width: 0;
+    }
+  }
+  .border-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #132f55;
+    width: 100%;
+  }
+  
+  
+  @media(max-width:992px){
+    .tab-pane img{
+      width: 100% !important;
+      /* margin-left:2rem   !important;  */
+    }
+  }

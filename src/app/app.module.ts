@@ -33,6 +33,13 @@ import { HomeCallToActionComponent } from './components/home-call-to-action/home
 import { OurMissionAndVissionComponent } from './components/our-mission-and-vission/our-mission-and-vission.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { StoreComponent } from './pages/store/store.component';
+import { WebsiteComponent } from './pages/website/website.component';
+import { EOMComponent } from './pages/eom/eom.component';
+import { EomSliderComponent } from './pages/eom/eom-slider/eom-slider.component';
+import { EomFeature1Component } from './pages/eom/eom-feature1/eom-feature1.component';
+import { EomFeatureTwoThreeComponent } from './pages/eom/eom-feature-two-three/eom-feature-two-three.component';
+import { EomTabsComponent } from './pages/eom/eom-tabs/eom-tabs.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -67,6 +74,13 @@ export function createTranslateLoader(http: HttpClient) {
     OurMissionAndVissionComponent,
     SideBarComponent,
     NavigationBarComponent,
+    StoreComponent,
+    WebsiteComponent,
+    EOMComponent,
+    EomSliderComponent,
+    EomFeature1Component,
+    EomFeatureTwoThreeComponent,
+    EomTabsComponent,
 
   ],
 

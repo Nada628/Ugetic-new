@@ -9,10 +9,13 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { SingleBlogComponent } from './pages/single-blog/single-blog.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { StoreComponent } from './pages/store/store.component';
+import { WebsiteComponent } from './pages/website/website.component';
+import { EOMComponent } from './pages/eom/eom.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent , data:{page: 'home'}},
   { path: 'about-us', component: AboutUsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact-us', component: ContactUsComponent },
@@ -20,6 +23,12 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'single-blog', component: SingleBlogComponent },
   { path: 'privacy-policy', component:PrivacyPolicyComponent },
+  { path: 'store', component:StoreComponent  ,data: { page: 'store ' }},
+  { path: 'website', component:WebsiteComponent,  data: { page: 'website  ' } },
+  { path: 'eom', component:EOMComponent,  data: { page: 'eom  ' } },
+
+
+
 
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '/home' }

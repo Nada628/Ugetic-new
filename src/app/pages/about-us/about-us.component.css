@@ -17,6 +17,9 @@
 .cardy:hover .cardy-img-top {
     transform: scale(1.05); 
 }
+/* .cardy img{
+    width: 50vw;
+} */
 
 .img-overlap {
     margin-top: -75px;
